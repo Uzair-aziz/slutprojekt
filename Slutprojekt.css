@@ -1,0 +1,220 @@
+.container div {
+    background: white;
+    padding: 10px;
+    border-radius: 20px;
+    
+
+}
+
+.container {
+    display: grid;
+    grid-template-columns:1fr 1fr  ;
+    grid-gap: 10px;
+    margin: 4%;
+    grid-template-areas:
+        "header header "
+        "content content "
+        "footer footer  "
+}
+
+
+/*Header */
+
+
+
+.header {
+grid-area: header;
+font-size: 150%;
+  
+}
+
+/*Content*/
+
+
+.content{
+grid-area: content;
+    
+}
+
+/*footer*/
+
+
+.footer {
+grid-area: footer;
+   
+}
+
+
+body {
+    
+  background-color: rgb(255,165,0);
+    color: black;
+
+}
+
+/*globalmeny*/
+
+    ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+
+}
+
+
+li {
+  display: inline;
+  margin-left: 7.5em
+
+}
+
+/* Understryck på länker */
+
+a:link, a:visited {
+    text-decoration: none;
+}
+
+
+/* Justering på Bilder i Hem Column */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Justering på Bilder i Hem Row */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+
+/*tabel ändring*/ 
+
+  table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 5px;
+  text-align: left;
+   
+}
+
+
+tr:nth-child(even) {background-color: #D3D3D3;}
+
+
+/* bilder på artist*/
+
+   .imgone {
+        width:20%;
+        float:left;
+        margin:5px;
+        padding: 20px
+      
+    }
+
+
+/* bilder på kopabiljet*/
+
+   .imgtwo {
+       margin:15px;
+       padding: 10px;
+       display: flex;
+       border-style: outset;
+       padding-left:20px;
+       max-width:100%;
+       
+    }
+
+
+.texttwo {
+
+display: inline-block;
+
+    
+}
+
+
+/*kontakt form*/
+
+
+fieldset{
+    padding: 1em;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+legend { 
+    font-size: larger;
+}
+
+form p {
+    position: relative;
+    
+ /*position absolute rot*/
+    
+ margin: 1.5em 0;   
+}
+
+label {
+    display: inline-block;
+    width: 85px;
+    margin-right: 5px;
+    text-align: right;
+    vertical-align: top;
+}
+
+label > strong {
+    position: absolute;
+    left: 305px;
+    text-align: left;
+}
+
+input[type="text"], input [type="email"] {
+
+    width: 200px;
+    
+}
+
+textarea {
+    width: 200px;
+    height: 100px;
+    resize: vertical;
+    
+}
+
+input [type"submit"]{
+    display: block;
+    margin: auto;
+}
+
+
+ /*login form*/
+
+
+.topnavi {
+
+ 
+  position: absolute;
+  top: 5px;
+  width: 95%;
+  padding: 10px;
+  overflow: hidden;
+  background-color: rgb(211,211,211);
+  text-align:right;
+    
+}
+
+
+/*Artist information*/
+.artisttwo {
+  display: block;
+  margin-left: 20%;
+  width: 50%;
+
+}
